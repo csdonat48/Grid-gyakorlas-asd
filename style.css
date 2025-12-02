@@ -1,0 +1,70 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+img{
+    width: 100%;
+}
+
+body{
+    background: url(img/cardsbg.jpg) no-repeat fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.first{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: min(1rem, 10vw);
+    margin: 0 auto;
+}
+
+header{
+    padding: min(2rem, 10vh);
+    background: rgba(10,10,10, .5);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px 3px rgba(10,10,10, 1);
+    text-shadow: 2px 2px 2px red;
+}
+
+
+article{
+    text-align: justify;
+    background: rgba(10, 10, 10, .8);
+}
+
+.body{
+    padding: 1.2rem;
+}
+
+.second{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    align-content: center;
+}
+
+.second article:first-child{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+
+@media (max-width: 700px) {
+    .first{
+        grid-template-columns: 1fr;
+    }
+
+    .second{
+        grid-template-rows: ;
+    }
+}
+
